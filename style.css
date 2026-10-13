@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background: #003057;
+    color: white;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#searchBox {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.year-btn {
+    border: none;
+    background: white;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.year-btn.active {
+    background: #0078d4;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    padding: 30px 0;
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px,1fr));
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: .2s;
+}
+
+.year-badge {
+    display: inline-block;
+    background: #0078d4;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    color: #003057;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #0078d4;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #005ea6;
+}

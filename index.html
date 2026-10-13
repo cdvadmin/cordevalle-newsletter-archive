@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CordeValle Newsletter Archive</title>
+    style.css
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>CordeValle Newsletter Archive</h1>
+        <p>Member newsletters, club updates, golf news, course improvements, dining announcements, and events.</p>
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search newsletters..."
+        >
+
+        <div class="filters">
+            <button class="year-btn active" data-year="all">All Years</button>
+            <button class="year-btn" data-year="2026">2026</button>
+            <button class="year-btn" data-year="2025">2025</button>
+            <button class="year-btn" data-year="2024">2024</button>
+            <button class="year-btn" data-year="2023">2023</button>
+            <button class="year-btn" data-year="2022">2022</button>
+            <button class="year-btn" data-year="2021">2021</button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div id="newsletterGrid" class="grid"></div>
+</main>
+
+<script>
+
+let allNewsletters = [];
+
+fetch('newsletters.json')
+    .then(response => response.json())
+    .then(data => {
+        allNewsletters = data;
+        renderNewsletters(data);
+    });
+
+function renderNewsletters(newsletters) {
+
+    const grid = document.getElementById('newsletterGrid');
+
+    grid.innerHTML = newsletters.map(item => `
+        <div class="card">
+            <div class="year-badge">${item.year}</div>
+
+            <h2>Week ${item.week}</h2>
+
+            <h3>${item.title}</h3>
+
+            <p>${item.summary}</p>
+
+            <a
+                href="${item.url}"
+                target="_blank"
+                class="button"
+            >
+                Read Newsletter
+            </a>
+        </div>
+    `).join('');
+}
+
+const searchBox = document.getElementById('searchBox');
+
+searchBox.addEventListener('input', filterNewsletters);
+
+let selectedYear = "all";
+
+document.querySelectorAll('.year-btn').forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+        document.querySelectorAll('.year-btn')
+            .forEach(b => b.classList.remove('active'));
+
+        btn.classList.add('active');
+
+        selectedYear = btn.dataset.year;
+
+        filterNewsletters();
+    });
+});
+
+function filterNewsletters() {
+
+    const searchValue =
+        searchBox.value.toLowerCase();
+
+    const filtered = allNewsletters.filter(item => {
+
+        const matchesSearch =
+            item.title.toLowerCase().includes(searchValue)
+            ||
+            item.summary.toLowerCase().includes(searchValue);
+
+        const matchesYear =
+            selectedYear === 'all'
+            ||
+            item.year.toString() === selectedYear;
+
+        return matchesSearch && matchesYear;
+    });
+
+    renderNewsletters(filtered);
+}
+
+</script>
+
+</body>
+</html>
