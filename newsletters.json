@@ -1,50 +1,355 @@
 [
   {
     "year": 2026,
-    "month": 10,
-    "title": "Please help our members Make the Most of the Long Weekend at CordeValle with...",
-    "summary": "Complimentary tickets and transportation to the concert at the Winery on Friday, Fairway Social at the Golf Shop on Saturday, Guests enjoy member pricing for pickleball clinics all month, New spa retail and expanded sale items",
-    "url": "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fonline.retailtribe.com%2FClient%2FOnlineEditor%2FEMV.aspx%3Fn%3D7020535%26r%3D622124&data=05%7C02%7Creinald.sanjuan%40cordevalle.com%7C3ddc7e78446f4e1241ab08df25701bcc%7C5985a51ddf94405f9e71209d45d48713%7C0%7C0%7C639270835569247850%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Cg632Ib0zXMxXFmtNNqGn%2Bn3cnVK8u2%2BHWRbUmQb1X0%3D&reserved=0"},
-  {
-    "year": 2021,
-    "week": 3,
-    "title": "Awards, Equipment & Member News",
-    "summary": "Golf Digest recognition for Jon Horner, new Callaway and TaylorMade fitting opportunities, member achievements, dining specials, tennis activities, and winter operations updates.",
-    "url": "https://online.retailtribe.com/Client/OnlineEditor/EMV.aspx?n=6900124&r=622124"
-  },
-  {
-    "year": 2022,
+    "month": "January",
     "week": 1,
-    "title": "Coming Soon",
-    "summary": "Placeholder for 2022 newsletters.",
-    "url": "#"
-  },
-  {
-    "year": 2023,
-    "week": 1,
-    "title": "Coming Soon",
-    "summary": "Placeholder for 2023 newsletters.",
-    "url": "#"
-  },
-  {
-    "year": 2024,
-    "week": 1,
-    "title": "Coming Soon",
-    "summary": "Placeholder for 2024 newsletters.",
-    "url": "#"
-  },
-  {
-    "year": 2025,
-    "week": 1,
-    "title": "Coming Soon",
-    "summary": "Placeholder for 2025 newsletters.",
+    "title": "Week 1",
+    "summary": "Summary coming soon.",
     "url": "#"
   },
   {
     "year": 2026,
-    "week": 1,
-    "title": "Coming Soon",
-    "summary": "Placeholder for 2026 newsletters.",
+    "month": "January",
+    "week": 2,
+    "title": "Week 2",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "January",
+    "week": 3,
+    "title": "Member Recognition Program Launch",
+    "summary": "Introduction of a refreshed recognition program celebrating members who make exceptional contributions to the club.",
+    "url": "https://online.retailtribe.com/Client/OnlineEditor/EMV.aspx?n=7010990&r=622124"
+  },
+  {
+    "year": 2026,
+    "month": "January",
+    "week": 4,
+    "title": "New Online Event Reservations",
+    "summary": "Rollout of a QR code-based reservation system that streamlines registration for club events.",
+    "url": "https://online.retailtribe.com/Client/OnlineEditor/EMV.aspx?n=7010991&r=622124"
+  },
+  {
+    "year": 2026,
+    "month": "January",
+    "week": 5,
+    "title": "Week 5",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "February",
+    "week": 6,
+    "title": "Week 6",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "February",
+    "week": 7,
+    "title": "Week 7",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "February",
+    "week": 8,
+    "title": "Week 8",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "February",
+    "week": 9,
+    "title": "Week 9",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "March",
+    "week": 10,
+    "title": "Week 10",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "March",
+    "week": 11,
+    "title": "Week 11",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "March",
+    "week": 12,
+    "title": "Week 12",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "March",
+    "week": 13,
+    "title": "Week 13",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "April",
+    "week": 14,
+    "title": "Week 14",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "April",
+    "week": 15,
+    "title": "Week 15",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "April",
+    "week": 16,
+    "title": "Week 16",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "April",
+    "week": 17,
+    "title": "Week 17",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "May",
+    "week": 18,
+    "title": "Week 18",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "May",
+    "week": 19,
+    "title": "Week 19",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "May",
+    "week": 20,
+    "title": "Week 20",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "May",
+    "week": 21,
+    "title": "Week 21",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "June",
+    "week": 22,
+    "title": "Week 22",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "June",
+    "week": 23,
+    "title": "Week 23",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "June",
+    "week": 24,
+    "title": "Week 24",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "June",
+    "week": 25,
+    "title": "Week 25",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "June",
+    "week": 26,
+    "title": "Week 26",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "July",
+    "week": 27,
+    "title": "Week 27",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "July",
+    "week": 28,
+    "title": "Week 28",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "July",
+    "week": 29,
+    "title": "Week 29",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "July",
+    "week": 30,
+    "title": "Week 30",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "August",
+    "week": 31,
+    "title": "Week 31",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "August",
+    "week": 32,
+    "title": "Week 32",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "August",
+    "week": 33,
+    "title": "Week 33",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "August",
+    "week": 34,
+    "title": "Week 34",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "August",
+    "week": 35,
+    "title": "Week 35",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "September",
+    "week": 36,
+    "title": "Week 36",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "September",
+    "week": 37,
+    "title": "Week 37",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "September",
+    "week": 38,
+    "title": "Week 38",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "September",
+    "week": 39,
+    "title": "Week 39",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+
+  {
+    "year": 2026,
+    "month": "October",
+    "week": 40,
+    "title": "Week 40",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "October",
+    "week": 41,
+    "title": "Week 41",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "October",
+    "week": 42,
+    "title": "Week 42",
+    "summary": "Summary coming soon.",
+    "url": "#"
+  },
+  {
+    "year": 2026,
+    "month": "October",
+    "week": 43,
+    "title": "Week 43",
+    "summary": "Summary coming soon.",
     "url": "#"
   }
 ]
