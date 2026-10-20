@@ -1,132 +1,142 @@
-<h2>Cordevalle Newsletter Archive</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CordeValle Newsletter Archive</title>
 
-<section class="month-section">
-    <h2>October 2026</h2>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <div class="card">
-        <h3>Week 40</h3>
-        <p>Summary coming soon.</p>
-    </div>
+<body>
 
-    <div class="card">
-        <h3>Week 41</h3>
-        <p>Summary coming soon.</p>
-    </div>
+<header>
+    <div class="container">
+        <h1>CordeValle Newsletter Archive</h1>
 
-    <div class="card">
-        <h3>Week 42</h3>
-        <p>Summary coming soon.</p>
-    </div>
-
-    <div class="card">
-        <h3>Week 43</h3>
-        <p>Summary coming soon.</p>
-    </div>
-</section>
-
-<section class="month-section">
-    <h2>September 2026</h2>
-
-    <div class="card"><h3>Week 36</h3></div>
-    <div class="card"><h3>Week 37</h3></div>
-    <div class="card"><h3>Week 38</h3></div>
-    <div class="card"><h3>Week 39</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>August 2026</h2>
-
-    <div class="card"><h3>Week 31</h3></div>
-    <div class="card"><h3>Week 32</h3></div>
-    <div class="card"><h3>Week 33</h3></div>
-    <div class="card"><h3>Week 34</h3></div>
-    <div class="card"><h3>Week 35</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>July 2026</h2>
-
-    <div class="card"><h3>Week 27</h3></div>
-    <div class="card"><h3>Week 28</h3></div>
-    <div class="card"><h3>Week 29</h3></div>
-    <div class="card"><h3>Week 30</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>June 2026</h2>
-
-    <div class="card"><h3>Week 22</h3></div>
-    <div class="card"><h3>Week 23</h3></div>
-    <div class="card"><h3>Week 24</h3></div>
-    <div class="card"><h3>Week 25</h3></div>
-    <div class="card"><h3>Week 26</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>May 2026</h2>
-
-    <div class="card"><h3>Week 18</h3></div>
-    <div class="card"><h3>Week 19</h3></div>
-    <div class="card"><h3>Week 20</h3></div>
-    <div class="card"><h3>Week 21</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>April 2026</h2>
-
-    <div class="card"><h3>Week 14</h3></div>
-    <div class="card"><h3>Week 15</h3></div>
-    <div class="card"><h3>Week 16</h3></div>
-    <div class="card"><h3>Week 17</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>March 2026</h2>
-
-    <div class="card"><h3>Week 10</h3></div>
-    <div class="card"><h3>Week 11</h3></div>
-    <div class="card"><h3>Week 12</h3></div>
-    <div class="card"><h3>Week 13</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>February 2026</h2>
-
-    <div class="card"><h3>Week 6</h3></div>
-    <div class="card"><h3>Week 7</h3></div>
-    <div class="card"><h3>Week 8</h3></div>
-    <div class="card"><h3>Week 9</h3></div>
-</section>
-
-<section class="month-section">
-    <h2>January 2026</h2>
-
-    <div class="card"><h3>Week 1</h3></div>
-    <div class="card"><h3>Week 2</h3></div>
-
-    <div class="card">
-        <h3>Week 3 - Member Recognition Program Launch</h3>
         <p>
-            Introduction of a refreshed recognition program celebrating members who make exceptional contributions to the club.
+            Browse 2026 member newsletters, club updates,
+            tournament results, event registrations,
+            member achievements and golf news.
         </p>
-        <a href="https://online.retailtribe.com/Client/OnlineEditor/EMV.aspx?n=7010990&r=622124"
-           target="_blank"
-           class="button">
-           View Newsletter
-        </a>
-    </div>
 
-    <div class="card">
-        <h3>Week 4 - New Online Event Reservations</h3>
-        <p>
-            Rollout of a QR code-based reservation system that streamlines registration for club events.
-        </p>
-        <a href="https://online.retailtribe.com/Client/OnlineEditor/EMV.aspx?n=7010991&r=622124"
-           target="_blank"
-           class="button">
-           View Newsletter
-        </a>
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search newsletters..."
+        >
     </div>
+</header>
 
-    <div class="card"><h3>Week 5</h3></div>
-</section>
+<main class="container">
+
+    <div id="newsletterGrid"></div>
+
+</main>
+
+<script>
+
+const monthOrder = [
+    "October",
+    "September",
+    "August",
+    "July",
+    "June",
+    "May",
+    "April",
+    "March",
+    "February",
+    "January"
+];
+
+let allNewsletters = [];
+
+fetch('newsletters.json')
+    .then(response => response.json())
+    .then(data => {
+
+        allNewsletters = data;
+
+        renderNewsletters(data);
+    });
+
+function renderNewsletters(newsletters){
+
+    const container =
+        document.getElementById('newsletterGrid');
+
+    container.innerHTML = "";
+
+    monthOrder.forEach(month => {
+
+        const monthItems =
+            newsletters
+                .filter(item => item.month === month)
+                .sort((a,b) => b.week - a.week);
+
+        if(monthItems.length === 0) return;
+
+        const section =
+            document.createElement('section');
+
+        section.className = "month-section";
+
+        section.innerHTML = `
+            <h2>${month} 2026</h2>
+
+            <div class="grid">
+
+                ${monthItems.map(item => `
+
+                    <div class="card">
+
+                        <div class="week-badge">
+                            Week ${item.week}
+                        </div>
+
+                        <h3>${item.title}</h3>
+
+                        <p>${item.summary}</p>
+
+                        <a
+                            href="${item.url}"
+                            target="_blank"
+                            class="button">
+                            Read Newsletter
+                        </a>
+
+                    </div>
+
+                `).join('')}
+
+            </div>
+        `;
+
+        container.appendChild(section);
+
+    });
+
+}
+
+document
+    .getElementById('searchBox')
+    .addEventListener('input', function(){
+
+        const search =
+            this.value.toLowerCase();
+
+        const filtered =
+            allNewsletters.filter(item =>
+                item.title.toLowerCase().includes(search)
+                ||
+                item.summary.toLowerCase().includes(search)
+            );
+
+        renderNewsletters(filtered);
+
+    });
+
+</script>
+
+</body>
+</html>
