@@ -1,120 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CordeValle Newsletter Archive</title>
-</head>
-<body>
+<h2>2026 Newsletter Archive</h2>
 
-<header>
-    <div class="container">
-        <h1>CordeValle Newsletter Archive</h1>
-        <p>Member newsletters, club updates, golf news, course improvements, dining announcements, and events.</p>
+<section class="month-section">
+    <h2>October 2026</h2>
 
-        <input
-            type="text"
-            id="searchBox"
-            placeholder="Search newsletters..."
-        >
-
-        <div class="filters">
-            <button class="year-btn active" data-year="all">All Years</button>
-            <button class="year-btn" data-year="2026">2026</button>
-            <button class="year-btn" data-year="2025">2025</button>
-            <button class="year-btn" data-year="2024">2024</button>
-            <button class="year-btn" data-year="2023">2023</button>
-            <button class="year-btn" data-year="2022">2022</button>
-            <button class="year-btn" data-year="2021">2021</button>
-        </div>
+    <div class="card">
+        <h3>Week 40</h3>
+        <p>Summary coming soon.</p>
     </div>
-</header>
 
-<main class="container">
-    <div id="newsletterGrid" class="grid"></div>
-</main>
+    <div class="card">
+        <h3>Week 41</h3>
+        <p>Summary coming soon.</p>
+    </div>
 
-<script>
+    <div class="card">
+        <h3>Week 42</h3>
+        <p>Summary coming soon.</p>
+    </div>
 
-let allNewsletters = [];
+    <div class="card">
+        <h3>Week 43</h3>
+        <p>Summary coming soon.</p>
+    </div>
+</section>
 
-fetch('newsletters.json')
-    .then(response => response.json())
-    .then(data => {
-        allNewsletters = data;
-        renderNewsletters(data);
-    });
+<section class="month-section">
+    <h2>September 2026</h2>
 
-function renderNewsletters(newsletters) {
+    <div class="card"><h3>Week 36</h3></div>
+    <div class="card"><h3>Week 37</h3></div>
+    <div class="card"><h3>Week 38</h3></div>
+    <div class="card"><h3>Week 39</h3></div>
+</section>
 
-    const grid = document.getElementById('newsletterGrid');
+<section class="month-section">
+    <h2>August 2026</h2>
 
-    grid.innerHTML = newsletters.map(item => `
-        <div class="card">
-            <div class="year-badge">${item.year}</div>
+    <div class="card"><h3>Week 31</h3></div>
+    <div class="card"><h3>Week 32</h3></div>
+    <div class="card"><h3>Week 33</h3></div>
+    <div class="card"><h3>Week 34</h3></div>
+    <div class="card"><h3>Week 35</h3></div>
+</section>
 
-            <h2>Week ${item.week}</h2>
+<section class="month-section">
+    <h2>July 2026</h2>
 
-            <h3>${item.title}</h3>
+    <div class="card"><h3>Week 27</h3></div>
+    <div class="card"><h3>Week 28</h3></div>
+    <div class="card"><h3>Week 29</h3></div>
+    <div class="card"><h3>Week 30</h3></div>
+</section>
 
-            <p>${item.summary}</p>
+<section class="month-section">
+    <h2>June 2026</h2>
 
-            <a
-                href="${item.url}"
-                target="_blank"
-                class="button"
-            >
-                Read Newsletter
-            </a>
-        </div>
-    `).join('');
-}
+    <div class="card"><h3>Week 22</h3></div>
+    <div class="card"><h3>Week 23</h3></div>
+    <div class="card"><h3>Week 24</h3></div>
+    <div class="card"><h3>Week 25</h3></div>
+    <div class="card"><h3>Week 26</h3></div>
+</section>
 
-const searchBox = document.getElementById('searchBox');
+<section class="month-section">
+    <h2>May 2026</h2>
 
-searchBox.addEventListener('input', filterNewsletters);
+    <div class="card"><h3>Week 18</h3></div>
+    <div class="card"><h3>Week 19</h3></div>
+    <div class="card"><h3>Week 20</h3></div>
+    <div class="card"><h3>Week 21</h3></div>
+</section>
 
-let selectedYear = "all";
-
-document.querySelectorAll('.year-btn').forEach(btn => {
-
-    btn.addEventListener('click', () => {
-
-        document.querySelectorAll('.year-btn')
-            .forEach(b => b.classList.remove('active'));
-
-        btn.classList.add('active');
-
-        selectedYear = btn.dataset.year;
-
-        filterNewsletters();
-    });
-});
-
-function filterNewsletters() {
-
-    const searchValue =
-        searchBox.value.toLowerCase();
-
-    const filtered = allNewsletters.filter(item => {
-
-        const matchesSearch =
-            item.title.toLowerCase().includes(searchValue)
-            ||
-            item.summary.toLowerCase().includes(searchValue);
-
-        const matchesYear =
-            selectedYear === 'all'
-            ||
-            item.year.toString() === selectedYear;
-
-        return matchesSearch && matchesYear;
-    });
-
-    renderNewsletters(filtered);
-}
-
-</script>
-
-</body>
-</html>
+<section class="month-section">
+    <h
