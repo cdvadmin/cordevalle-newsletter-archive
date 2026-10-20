@@ -90,20 +90,17 @@ function renderNewsletters(newsletters){
 
                     <div class="card">
 
-                        <div class="week-badge">
-                            Week ${item.week}
-                        </div>
-
                         <h3>${item.title}</h3>
 
-                        <p>${item.summary}</p>
-
-                        <a
-                            href="${item.url}"
-                            target="_blank"
-                            class="button">
-                            Read Newsletter
-                        </a>
+<p>
+    <a
+        href="${item.url}"
+        target="_blank"
+        class="summary-link">
+        ${item.summary}
+    </a>
+</p>
+``
 
                     </div>
 
