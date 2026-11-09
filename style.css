@@ -12,12 +12,12 @@
 
     header h1 {
 
-        font-size: 52px;
+        font-size: 40px;
     }
 
     header p {
 
-        font-size: 16px;
+        font-size: 10px;
     }
 
     #searchBox {
@@ -30,7 +30,7 @@ header {
 
     background: #214A35;
 
-    padding: 30px;
+    padding: 20px;
 
     width: 100%;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ header h1 {
 
     font-family: Georgia, serif;
 
-    font-size: 40px;
+    font-size: 20px;
 
     line-height: 1;
 
