@@ -64,7 +64,7 @@ header p {
 
     color: #F2EFE6;
 
-    font-size: 18px;
+    font-size: 10px;
 
     line-height: 1.4;
 
@@ -75,7 +75,7 @@ header p {
 
 #searchBox {
 
-    width: 350px;
+    width: 300px;
 
     max-width: 100%;
 
